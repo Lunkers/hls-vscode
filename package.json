@@ -1,0 +1,35 @@
+{
+  "name": "hls",
+  "displayName": "HLS",
+  "description": "HTTP Live Streaming Language support",
+  "version": "0.0.1",
+  "publisher": "Fredrik Lundkvist",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "main": ".out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "hls",
+        "aliases": [
+          "HLS",
+          "hls"
+        ],
+        "extensions": [
+          ".m3u8"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hls",
+        "scopeName": "source.hls",
+        "path": "./syntaxes/hls.tmLanguage.json"
+      }
+    ]
+  }
+}

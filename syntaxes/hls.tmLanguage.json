@@ -1,0 +1,63 @@
+{
+	"firstLineMatch": "#EXTM3U",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "HLS",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "comment.line.hls",
+					"match": "^#(?!EXT).*$"
+				},
+				{
+					"comment": "HLS tag. Always start with #EXT-, as specified in section 4",
+					"name": "entity.name.tag.hls",
+					"begin": "^#",
+					"end": ":",
+					"patterns": [
+						{
+							"match": "EXT-."
+						}
+					]
+				},
+				{
+					"comment": "Attribute names, section 4.2",
+					"name": "entity.name.class.hls",
+					"match": "[A-Z-]*="
+				},
+				{
+					"name": "constant.language.hls",
+					"match": "(AUDIO|VIDEO|SUBTITLES|CLOSED-CAPTIONS|SDR|HLG|PQ|NONE|YES|NO|VOD|EVENT)"
+				},
+				{
+					"name": "constant.numeric.hls",
+					"match": "[0-9]"
+				},
+				{
+					"name": "string.hls",
+					"match": "^.*"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.hls",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hls",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.hls"
+}
