@@ -1,14 +1,21 @@
 {
   "name": "hls",
   "displayName": "HLS",
-  "description": "HTTP Live Streaming Language support",
-  "version": "0.0.1",
-  "publisher": "Fredrik Lundkvist",
+  "description": "HTTP Live Streaming syntax highlighting",
+  "version": "0.1.0",
+  "publisher": "Lunkers",
+  "author": {
+    "name": "Fredrik Lundkvist"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },
+  "license": "MIT",
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "HLS","hls","HTTP live streaming", "manifest", "Streaming"
   ],
   "main": ".out/extension.js",
   "contributes": {
@@ -31,5 +38,13 @@
         "path": "./syntaxes/hls.tmLanguage.json"
       }
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Lunkers/hls-vscode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lunkers/hls-vscode.git"
+  },
+  "homepage": "https://github.com/Lunkers/hls-vscode/blob/main/README.md"
 }
