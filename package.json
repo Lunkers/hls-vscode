@@ -1,7 +1,7 @@
 {
   "name": "hls",
   "displayName": "HLS",
-  "description": "HTTP Live Streaming syntax highlighting",
+  "description": "HLS syntax highlighting",
   "version": "0.1.0",
   "publisher": "Lunkers",
   "author": {
@@ -15,7 +15,7 @@
     "Programming Languages"
   ],
   "keywords": [
-    "HLS","hls","HTTP live streaming", "manifest", "Streaming"
+    "HLS","hls", "manifest", "Streaming"
   ],
   "contributes": {
     "languages": [
