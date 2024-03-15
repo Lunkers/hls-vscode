@@ -1,6 +1,6 @@
 # hls-vscode
 
-A very simple plugin to enable somewhat sane syntax highlighting for [HLS](https://developer.apple.com/streaming/) manifests VS code.
+A very simple plugin to enable somewhat sane syntax highlighting for Http Live Streaming (HLS) manifests VS code.
 
 It's not the cleanest implementation, and there might be values missing.
 
