@@ -21,7 +21,7 @@
 					"comment": "HLS tag. Always start with #EXT-, as specified in section 4",
 					"name": "entity.name.tag.hls",
 					"begin": "^#",
-					"end": ":",
+					"end": "(:|$)",
 					"patterns": [
 						{
 							"match": "EXT-."
